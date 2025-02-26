@@ -1,0 +1,42 @@
+.cardGroup {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 130px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-left: 15px;
+
+}
+
+.cardGroup:hover {
+    border: 1px solid #161616;
+
+}
+
+.cardGroup .icon {
+    font-size: 2.5rem;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.cardGroup p {
+    max-width: 140px;
+    font-weight: 600;
+}
+
+.cardGroup.active {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 130px;
+    background: #161616;
+    color: white;
+    border: 1px solid #161616;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-left: 15px;
+
+}

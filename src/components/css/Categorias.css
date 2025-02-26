@@ -1,0 +1,114 @@
+/* CSS COMPONENTE CATEGORIAS (SLIDER)*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 10px;
+    height: 100px;
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.swiper-slide:hover {
+    opacity: 1;
+}
+
+.swiper-slide:hover span {
+    opacity: 1;
+    border-bottom: 2px solid gray;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.swiper-slide span {
+    font-size: 10px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.swiper-slide.active span {
+    border-bottom: 2px solid black;
+}
+
+.swiper-slide.active {
+    opacity: 1;
+}
+
+.swiper-button-prev::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(137deg);
+
+}
+
+.swiper-button-next::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(-45deg);
+}
+
+.swiper-button-prev {
+    background: white;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 35px;
+
+}
+
+.swiper-button-next {
+    background: white;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    box-shadow: 5px 10px 15px 20px white;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+/* CSS COMPONENTE DE FILTRO (SLIDER) */
+
+.btn-filtro {
+    border: none;
+}
+
+.btn-filtro:hover {
+    border: 1px solid gray;
+
+}
+
+@media screen and (max-width:575px) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+}

@@ -1,0 +1,27 @@
+.container-airbnb {
+    display: flex;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:checked {
+    background-color: #161616 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+
+@media screen and (max-width:1200px) {
+    .container-airbnb {
+        display: flex;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

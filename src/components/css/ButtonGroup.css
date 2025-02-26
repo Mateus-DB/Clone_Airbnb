@@ -1,0 +1,20 @@
+.btn-especial {
+    padding: 10px 15px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-especial:hover {
+    border: 1px solid #161616;
+}
+
+.btn-especial.active {
+    padding: 10px 15px;
+    background: #161616;
+    color: white;
+    border: 1px solid #161616;
+    border-radius: 20px;
+    cursor: pointer;
+}
